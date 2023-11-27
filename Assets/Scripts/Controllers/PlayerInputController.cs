@@ -15,7 +15,7 @@ public class PlayerInputController : PlayerCharacterController  // PlayerCharact
     }
 
     // SendMessage방식 Move, Look, Fire 라는 3가지 Action을 만들어놨는데 그 앞에다 On을 붙이면 그 애들이 실행됐을 때 돌려받는 함수를 만들어 주는 것 이다.
-    public void OnAMove(InputValue value)
+    public void OnMove(InputValue value)
     {
         // 키가 눌리면 값을 그 방향의 방향벡터로 변환
         Vector2 moveInput = value.Get<Vector2>().normalized;
