@@ -9,6 +9,7 @@ public class PlayerOutName : MonoBehaviour
 
     public void Start()
     {
+        // Start Scene에서 입력한 이름 가져와서 텍스트에 띄운다.
         playerNameTxt.text = GameManager.instance.OutputPlayerName();
     }
 }
