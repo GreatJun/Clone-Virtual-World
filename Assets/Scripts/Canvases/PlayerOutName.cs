@@ -9,6 +9,6 @@ public class PlayerOutName : MonoBehaviour
 
     public void Start()
     {
-        playerNameTxt.text = GameManager.instance.OutputPlayerName().ToString();
+        playerNameTxt.text = GameManager.instance.OutputPlayerName();
     }
 }
