@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private void ApllyMovement(Vector2 direction)
     {
         // direction에는 입력받은 방향의 벡터가 들어있음.
-        direction = direction * 5;
+        direction *= 5;
 
         // Player의 Rigidbody에 속도(velocity)를 넣어줌.
         _rigidbody.velocity = direction;
