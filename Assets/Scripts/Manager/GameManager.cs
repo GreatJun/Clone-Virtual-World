@@ -79,12 +79,18 @@ public class GameManager : MonoBehaviour
         if (characterIndex == 0) 
         {
             Instantiate(kngiht);
-            Destroy(wizzard);
+            //Destroy(wizzard);
         }
         else if (characterIndex == 1) 
         {
             Instantiate(wizzard);
-            Destroy(kngiht);
+            //Destroy(kngiht);
         }
+    }
+
+    public int CharacterCheck()
+    {
+        if (characterIndex == 0) return 0;
+        else return 1;
     }
 }
