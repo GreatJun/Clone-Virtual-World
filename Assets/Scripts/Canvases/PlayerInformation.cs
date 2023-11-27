@@ -15,6 +15,7 @@ public class PlayerInformation : MonoBehaviour
         playerName = playerinputName.GetComponent<InputField>().text;
     }
 
+    // 플레이어 이름 저장
     public void PlayerInputNameSave()
     {
         playerName = playerinputName.text;
