@@ -78,4 +78,17 @@ public class MainUIManager : MonoBehaviour
         beforeCharacter = GameObject.FindGameObjectWithTag("Player");
         Destroy(beforeCharacter);
     }
+
+    #region 이동 방지 시간
+    // 이동 방지
+    public void TimeStop()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void TimeGo()
+    {
+        Time.timeScale = 1;
+    }
+    #endregion
 }

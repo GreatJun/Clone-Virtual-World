@@ -31,4 +31,15 @@ public class PlayerInformation : MonoBehaviour
         }
     }
 
+    public void PlayerNameChange()
+    {
+        if (playerinputName.text.Length > 1 && playerinputName.text.Length < 11)
+        {
+            // 조건 충족시 이름 저장
+            playerName = playerinputName.text;
+            // 게임 매니저에 이름 저장
+            GameManager.instance.SettingPlayerName(playerName);
+        }
+
+    }
 }
