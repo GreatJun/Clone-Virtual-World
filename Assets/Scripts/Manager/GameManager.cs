@@ -30,10 +30,13 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region 초기 설정
+
+
     private void Start()
     {
         Initalize();
     }
+
 
     // 캐릭터 정보
     private GameObject kngiht;
