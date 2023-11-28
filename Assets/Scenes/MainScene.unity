@@ -233,7 +233,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2051133569}
   m_Father: {fileID: 1981738103}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,7 +558,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 622408914}
-  - {fileID: 958979327}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -700,6 +700,7 @@ GameObject:
   - component: {fileID: 290954407}
   - component: {fileID: 290954409}
   - component: {fileID: 290954408}
+  - component: {fileID: 290954410}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -715,11 +716,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290954406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1242902678}
+  m_Father: {fileID: 292260527}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &290954408
@@ -819,6 +820,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &290954410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290954406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 2000
 --- !u!1 &292260526
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +865,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 290954407}
   m_Father: {fileID: 1242902678}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1087,6 +1104,7 @@ GameObject:
   - component: {fileID: 349596987}
   - component: {fileID: 349596989}
   - component: {fileID: 349596988}
+  - component: {fileID: 349596990}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -1102,11 +1120,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349596986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1968144265}
+  m_Father: {fileID: 481014534}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &349596988
@@ -1206,6 +1224,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &349596990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349596986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 5000
 --- !u!1 &351642912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1500,7 @@ GameObject:
   - component: {fileID: 439779763}
   - component: {fileID: 439779765}
   - component: {fileID: 439779764}
+  - component: {fileID: 439779766}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -1482,11 +1516,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439779762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1054300400}
+  m_Father: {fileID: 787148537}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &439779764
@@ -1586,6 +1620,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &439779766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439779762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 7000
 --- !u!1 &479034377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,7 +1811,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 349596987}
   m_Father: {fileID: 1968144265}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5032,7 +5082,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1316113488}
   m_Father: {fileID: 1890020945}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5143,7 +5194,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 958979327}
   m_Father: {fileID: 229687280}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5536,7 +5588,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 439779763}
   m_Father: {fileID: 1054300400}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6027,6 +6080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 1000
 --- !u!1 &911675570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6198,6 +6253,7 @@ GameObject:
   - component: {fileID: 958979327}
   - component: {fileID: 958979329}
   - component: {fileID: 958979328}
+  - component: {fileID: 958979330}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -6213,11 +6269,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958979326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 229687280}
+  m_Father: {fileID: 622408914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &958979328
@@ -6317,6 +6373,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &958979330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958979326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 9000
 --- !u!1 &985911571
 GameObject:
   m_ObjectHideFlags: 0
@@ -6611,7 +6682,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 787148537}
-  - {fileID: 439779763}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7215,7 +7285,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 292260527}
-  - {fileID: 290954407}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7344,6 +7413,7 @@ GameObject:
   - component: {fileID: 1316113488}
   - component: {fileID: 1316113490}
   - component: {fileID: 1316113489}
+  - component: {fileID: 1316113491}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -7359,11 +7429,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316113487}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1890020945}
+  m_Father: {fileID: 617972550}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1316113489
@@ -7463,6 +7533,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1316113491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316113487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 3000
 --- !u!1 &1331386820
 GameObject:
   m_ObjectHideFlags: 0
@@ -9567,7 +9652,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1625783025}
   m_Father: {fileID: 1957906465}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17238,6 +17324,7 @@ GameObject:
   - component: {fileID: 1625783025}
   - component: {fileID: 1625783027}
   - component: {fileID: 1625783026}
+  - component: {fileID: 1625783028}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -17253,11 +17340,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625783024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1957906465}
+  m_Father: {fileID: 1563507510}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1625783026
@@ -17357,6 +17444,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1625783028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625783024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 4000
 --- !u!1 &1724884439
 GameObject:
   m_ObjectHideFlags: 0
@@ -17524,6 +17626,7 @@ GameObject:
   - component: {fileID: 1801880453}
   - component: {fileID: 1801880455}
   - component: {fileID: 1801880454}
+  - component: {fileID: 1801880456}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -17539,11 +17642,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801880452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2097737737}
+  m_Father: {fileID: 1895349880}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1801880454
@@ -17643,6 +17746,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1801880456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801880452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 6000
 --- !u!1 &1840965398
 GameObject:
   m_ObjectHideFlags: 0
@@ -17805,7 +17923,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 617972550}
-  - {fileID: 1316113488}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17860,7 +17977,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1801880453}
   m_Father: {fileID: 2097737737}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18024,7 +18142,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1563507510}
-  - {fileID: 1625783025}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18132,7 +18249,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 481014534}
-  - {fileID: 349596987}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18320,7 +18436,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 102295654}
-  - {fileID: 2051133569}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18436,6 +18551,7 @@ GameObject:
   - component: {fileID: 2051133569}
   - component: {fileID: 2051133571}
   - component: {fileID: 2051133570}
+  - component: {fileID: 2051133572}
   m_Layer: 0
   m_Name: ColliderBox
   m_TagString: Untagged
@@ -18451,11 +18567,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051133568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 40, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1981738103}
+  m_Father: {fileID: 102295654}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2051133570
@@ -18555,6 +18671,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2051133572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051133568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8769b77d657f60469bbffa8ca81927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCPopupPanel: {fileID: 997115322}
+  NPCConversationPanel: {fileID: 1560688030}
+  npcKeyValue: 8000
 --- !u!1 &2078059746
 GameObject:
   m_ObjectHideFlags: 0
@@ -18742,7 +18873,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1895349880}
-  - {fileID: 1801880453}
   m_Father: {fileID: 798689390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
