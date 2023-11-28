@@ -48,6 +48,9 @@ public class GameManager : MonoBehaviour
     // NPC 이름
     private List<string> npcNames = new List<string>();
 
+    // 접촉한 NPC의 이름
+    private string contactName = null;
+
     // 리소스 로드
     private void Initalize()
     {
@@ -119,5 +122,17 @@ public class GameManager : MonoBehaviour
             outName[i] = npcNames[i];
         }
         return outName;
+    }
+
+    // Player가 접촉한 NPC 이름 저장
+    public void ContactNPCNameSave(string name)
+    {
+        contactName = name;
+    }
+
+    // Player가 접촉한 NPC 이름 내보내기
+    public string ContactNPCNameOutput()
+    {
+        return contactName;
     }
 }
