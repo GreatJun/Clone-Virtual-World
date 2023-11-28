@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class NPCCollision : MonoBehaviour
 {
@@ -13,10 +12,13 @@ public class NPCCollision : MonoBehaviour
 
     // NPC 대화 정보
     protected Dictionary<int, string> talkDate;
+    protected Dictionary<int, Sprite> npcProfile;
 
     private void Awake()
     {
+        // 초기화
         talkDate = new Dictionary<int, string>();
+        npcProfile = new Dictionary<int, Sprite>();
         TalkDateSetting();
     }
     void TalkDateSetting()
@@ -30,6 +32,17 @@ public class NPCCollision : MonoBehaviour
         talkDate.Add(7000, "안녕하세요. 한효승 매니저 입니다.");
         talkDate.Add(8000, "안녕하세요. 장윤서 매니저 입니다.");
         talkDate.Add(9000, "안녕하세요. 박준영 매니저 입니다.");
+
+        //Resources.Load<GameObject>("Prefabs/PlayerKnight")
+        npcProfile.Add(1000, Resources.Load<Sprite>("Image/OH Tuter"));
+        npcProfile.Add(2000, Resources.Load<Sprite>("Image/Song Tuter"));
+        npcProfile.Add(3000, Resources.Load<Sprite>("Image/Lee tuter"));
+        npcProfile.Add(4000, Resources.Load<Sprite>("Image/Kang tuter"));
+        npcProfile.Add(5000, Resources.Load<Sprite>("Image/White Tuter"));
+        npcProfile.Add(6000, Resources.Load<Sprite>("Image/Jung Manager"));
+        npcProfile.Add(7000, Resources.Load<Sprite>("Image/Han Manager"));
+        npcProfile.Add(8000, Resources.Load<Sprite>("Image/Jang Manager"));
+        npcProfile.Add(9000, Resources.Load<Sprite>("Image/Park Manager"));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +53,7 @@ public class NPCCollision : MonoBehaviour
         NPCPopupPanel.transform.GetChild(0).GetComponent<Text>().text = GameManager.instance.ContactNPCNameOutput();
         // Npc 대화 text에 talkDate[id]에 대응되는 Value값 대입
         NPCConversationPanel.transform.GetChild(0).GetComponent<Text>().text = talkDate[npcKeyValue];
+        NPCConversationPanel.transform.GetChild(2).GetComponent<Image>().sprite = npcProfile[npcKeyValue];
     }
 
     private void OnTriggerExit2D(Collider2D collision)
