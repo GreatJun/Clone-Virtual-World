@@ -4830,6 +4830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personUI: {fileID: 1724884441}
+  player: {fileID: 0}
 --- !u!1 &1158166342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5330,18 +5331,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1130842211}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
         m_MethodName: SelectCharacter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1570628582}
-        m_TargetAssemblyTypeName: PlayerOutName, Assembly-CSharp
-        m_MethodName: ReLoadName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7146,7 +7135,6 @@ GameObject:
   - component: {fileID: 1570628578}
   - component: {fileID: 1570628580}
   - component: {fileID: 1570628579}
-  - component: {fileID: 1570628582}
   m_Layer: 5
   m_Name: CharacterBackDesign
   m_TagString: Untagged
@@ -7215,19 +7203,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570628577}
   m_CullTransparentMesh: 1
---- !u!114 &1570628582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570628577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26507b3e88eb2f542a5fdc8838c362fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &1580968720
 GameObject:
   m_ObjectHideFlags: 0
@@ -14635,18 +14610,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1130842211}
         m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
         m_MethodName: SelectCharacter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1570628582}
-        m_TargetAssemblyTypeName: PlayerOutName, Assembly-CSharp
-        m_MethodName: ReLoadName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

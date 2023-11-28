@@ -9,10 +9,20 @@ public class MainUIManager : MonoBehaviour
 
     GameObject beforeCharacter;
 
+    [SerializeField] private GameObject player;
+
     //private void Awake()
     //{
     //    personUI = GetComponent<Text>();
     //}
+    public void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        // Start Scene에서 입력한 이름 가져와서 텍스트에 띄운다.
+        //playerNameTxt.text = GameManager.instance.OutputPlayerName();
+        player.transform.GetChild(1).GetComponent<TextMesh>().text = GameManager.instance.OutputPlayerName();
+    }
 
     private void LateUpdate()
     {
@@ -52,6 +62,13 @@ public class MainUIManager : MonoBehaviour
     public void SelectCharacter()
     {
         GameManager.instance.InvokeCharacter();
+        Invoke("PlayerNameSetting", 0.1f);
+    }
+
+    public void PlayerNameSetting()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.GetChild(1).GetComponent<TextMesh>().text = GameManager.instance.OutputPlayerName();
     }
 
     public void CheckDestory()
