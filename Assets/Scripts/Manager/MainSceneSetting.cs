@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class MainSceneSetting : MonoBehaviour
 {
+    // 접속자 명단 리스트
     [SerializeField] private List<GameObject> personnel = new List<GameObject>();
-    [SerializeField] private List<string> names = new List<string>();
 
     private void Awake()
     {
@@ -18,12 +18,8 @@ public class MainSceneSetting : MonoBehaviour
     {
         for (int i = 0; i < personnel.Count; i++)
         {
-            // NPC이름 얻어오기
-            names.Add(personnel[i].GetComponent<Text>().text);
             // GameManager에 NPC이름 저장
-            GameManager.instance.NPCNameSave(names[i]);
+            GameManager.instance.NPCNameSave(personnel[i].transform.GetChild(0).GetComponent<TextMesh>().text);
         }
     }
-
-
 }

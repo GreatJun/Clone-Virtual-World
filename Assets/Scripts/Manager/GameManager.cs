@@ -104,4 +104,14 @@ public class GameManager : MonoBehaviour
         npcNames.Add(name);
     }
 
+    // NPC 이름 불러내기
+    public string[] OutPutNPCName()
+    {
+        string[] outName = new string[npcNames.Count];
+        for(int i = 0; i < npcNames.Count; i++)
+        {
+            outName[i] = npcNames[i];
+        }
+        return outName;
+    }
 }
