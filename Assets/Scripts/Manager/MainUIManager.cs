@@ -65,12 +65,14 @@ public class MainUIManager : MonoBehaviour
         Invoke("PlayerNameSetting", 0.1f);
     }
 
+    // 바뀐 캐릭터에 이름 적용
     public void PlayerNameSetting()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.GetChild(1).GetComponent<TextMesh>().text = GameManager.instance.OutputPlayerName();
     }
 
+    // 원래 캐릭터 파괴
     public void CheckDestory()
     {
         beforeCharacter = GameObject.FindGameObjectWithTag("Player");
