@@ -7,6 +7,8 @@ public class MainUIManager : MonoBehaviour
 {
     public Text personUI;
 
+    GameObject beforeCharacter;
+
     //private void Awake()
     //{
     //    personUI = GetComponent<Text>();
@@ -54,6 +56,7 @@ public class MainUIManager : MonoBehaviour
 
     public void CheckDestory()
     {
-        Destroy(this);
+        beforeCharacter = GameObject.Find("Player");
+        Destroy(beforeCharacter);
     }
 }

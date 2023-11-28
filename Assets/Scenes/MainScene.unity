@@ -5315,9 +5315,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6076936629617864767, guid: de9065875c51c744ab2a088bd0a00957, type: 3}
-        m_TargetAssemblyTypeName: CharacterDestory, Assembly-CSharp
-        m_MethodName: DeleteCharacter
+      - m_Target: {fileID: 1130842211}
+        m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        m_MethodName: CheckDestory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14594,9 +14594,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7978933188374905521, guid: 1ff00fa2fe22ec94f937b54c3c1bbf64, type: 3}
-        m_TargetAssemblyTypeName: CharacterDestory, Assembly-CSharp
-        m_MethodName: DeleteCharacter
+      - m_Target: {fileID: 1130842211}
+        m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        m_MethodName: CheckDestory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
