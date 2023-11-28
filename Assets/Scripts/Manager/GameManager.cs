@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Timeline;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
@@ -80,16 +81,18 @@ public class GameManager : MonoBehaviour
     }
 
     // 캐릭터 생성
-    public void InvokeCharacter()
+    public GameObject InvokeCharacter()
     {
         if (characterIndex == 0) 
         {
-            Instantiate(kngiht);
+            GameObject character = Instantiate(kngiht);
+            return character;
             //Destroy(wizzard);
         }
-        else if (characterIndex == 1) 
+        else //if (characterIndex == 1) 
         {
-            Instantiate(wizzard);
+            GameObject character = Instantiate(wizzard);
+            return character;
             //Destroy(kngiht);
         }
     }

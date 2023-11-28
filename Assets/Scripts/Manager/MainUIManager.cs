@@ -61,7 +61,8 @@ public class MainUIManager : MonoBehaviour
 
     public void SelectCharacter()
     {
-        GameManager.instance.InvokeCharacter();
+        GameObject player = GameManager.instance.InvokeCharacter();
+        player.transform.position = beforeCharacter.transform.position;
         Invoke("PlayerNameSetting", 0.1f);
     }
 
