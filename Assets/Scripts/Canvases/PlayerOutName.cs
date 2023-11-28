@@ -15,4 +15,10 @@ public class PlayerOutName : MonoBehaviour
         //playerNameTxt.text = GameManager.instance.OutputPlayerName();
         player.transform.GetChild(1).GetComponent<TextMesh>().text = GameManager.instance.OutputPlayerName();
     }
+
+    public void ReLoadName()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.GetChild(1).GetComponent<TextMesh>().text = GameManager.instance.OutputPlayerName();
+    }
 }

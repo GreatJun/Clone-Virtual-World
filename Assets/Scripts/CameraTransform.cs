@@ -20,8 +20,10 @@ public class CameraTransform : MonoBehaviour
         player = GameObject.FindWithTag("Player");
     }
 
+
     public void LateUpdate()
     {
+        if (player == null) player = GameObject.FindWithTag("Player");
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
     }
 }

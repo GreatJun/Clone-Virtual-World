@@ -56,7 +56,7 @@ public class MainUIManager : MonoBehaviour
 
     public void CheckDestory()
     {
-        beforeCharacter = GameObject.Find("Player");
+        beforeCharacter = GameObject.FindGameObjectWithTag("Player");
         Destroy(beforeCharacter);
     }
 }
