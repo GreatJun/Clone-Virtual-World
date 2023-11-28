@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Timeline;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
@@ -41,6 +42,9 @@ public class GameManager : MonoBehaviour
 
     // 플레이어 이름
     private string playerName;
+
+    // NPC 이름
+    private List<string> npcNames = new List<string>();
 
     // 리소스 로드
     private void Initalize()
@@ -93,4 +97,11 @@ public class GameManager : MonoBehaviour
         if (characterIndex == 0) return 0;
         else return 1;
     }
+
+    // NPC 이름 저장
+    public void NPCNameSave(string name)
+    {
+        npcNames.Add(name);
+    }
+
 }
