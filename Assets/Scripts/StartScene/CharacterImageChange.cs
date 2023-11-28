@@ -24,4 +24,5 @@ public class CharacterImageChange : MonoBehaviour
     {
         isImage.sprite = changeImage_Wizzard;
     }
+
 }

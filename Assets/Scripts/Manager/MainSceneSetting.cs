@@ -22,4 +22,5 @@ public class MainSceneSetting : MonoBehaviour
             GameManager.instance.NPCNameSave(personnel[i].transform.GetChild(0).GetComponent<TextMesh>().text);
         }
     }
+
 }

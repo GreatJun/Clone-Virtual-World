@@ -35,4 +35,25 @@ public class MainUIManager : MonoBehaviour
 
         personUI.text += " " + playerName;
     }
+
+    // 캐릭터 재선택
+    public void KnightSelect()
+    {
+        GameManager.instance.KnightChoice();
+    }
+
+    public void WizzardSelect()
+    {
+        GameManager.instance.WizzardChoice();
+    }
+
+    public void SelectCharacter()
+    {
+        GameManager.instance.InvokeCharacter();
+    }
+
+    public void CheckDestory()
+    {
+        Destroy(this);
+    }
 }

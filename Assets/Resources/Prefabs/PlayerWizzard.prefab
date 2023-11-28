@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 5163020854885590241}
   - component: {fileID: 6394856059869880397}
   - component: {fileID: 1332648816646301400}
+  - component: {fileID: 6076936629617864767}
   m_Layer: 0
   m_Name: PlayerWizzard
   m_TagString: Player
@@ -128,7 +129,7 @@ Transform:
   - {fileID: 3003551793654006058}
   - {fileID: 8778330600851306232}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8601729930858047114
 BoxCollider2D:
@@ -269,6 +270,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterRenderer: {fileID: 8277582374886234388}
+--- !u!114 &6076936629617864767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804011403201901209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371ddbe5280bbb34caaccf7c3fc42f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3114203732807460601
 GameObject:
   m_ObjectHideFlags: 0

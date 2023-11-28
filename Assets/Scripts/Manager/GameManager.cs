@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
         characterIndex = 1;
     }
 
+    // 캐릭터 생성
     public void InvokeCharacter()
     {
         if (characterIndex == 0) 
@@ -92,6 +93,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // 캐릭터 정보 체크
     public int CharacterCheck()
     {
         if (characterIndex == 0) return 0;
