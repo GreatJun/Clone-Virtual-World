@@ -52,7 +52,7 @@ public class NPCCollision : MonoBehaviour
         NPCPopupPanel.SetActive(true);
         // 접촉한 npc 이름으로 판넬 텍스트 설정
         NPCPopupPanel.transform.GetChild(0).GetComponent<Text>().text = GameManager.instance.ContactNPCNameOutput();
-        // Npc 대화 text에 talkDate[id]에 대응되는 Value값 대입
+        // Npc 대화 text에 만난 NPC의 Key값으로 Value받아오기
         NPCConversationPanel.transform.GetChild(0).GetComponent<Text>().text = talkDate[npcKeyValue];
         NPCConversationPanel.transform.GetChild(2).GetComponent<Image>().sprite = npcProfile[npcKeyValue];
     }
