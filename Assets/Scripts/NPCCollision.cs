@@ -23,6 +23,7 @@ public class NPCCollision : MonoBehaviour
     }
     void TalkDateSetting()
     {
+        // NPC 대사
         talkDate.Add(1000, "안녕하세요. 오정호 튜터 입니다.");
         talkDate.Add(2000, "안녕하세요. 송지원 튜터 입니다.");
         talkDate.Add(3000, "안녕하세요. 이성언 튜터 입니다.");
@@ -33,7 +34,7 @@ public class NPCCollision : MonoBehaviour
         talkDate.Add(8000, "안녕하세요. 장윤서 매니저 입니다.");
         talkDate.Add(9000, "안녕하세요. 박준영 매니저 입니다.");
 
-        //Resources.Load<GameObject>("Prefabs/PlayerKnight")
+        // NPC Image
         npcProfile.Add(1000, Resources.Load<Sprite>("Image/OH Tuter"));
         npcProfile.Add(2000, Resources.Load<Sprite>("Image/Song Tuter"));
         npcProfile.Add(3000, Resources.Load<Sprite>("Image/Lee tuter"));
