@@ -24,15 +24,15 @@ public class NPCCollision : MonoBehaviour
     void TalkDateSetting()
     {
         // NPC 대사
-        talkDate.Add(1000, "안녕하세요. 오정호 튜터 입니다.");
-        talkDate.Add(2000, "안녕하세요. 송지원 튜터 입니다.");
-        talkDate.Add(3000, "안녕하세요. 이성언 튜터 입니다.");
-        talkDate.Add(4000, "안녕하세요. 강성훈 튜터 입니다.");
-        talkDate.Add(5000, "안녕하세요. 김하연 튜터 입니다.");
-        talkDate.Add(6000, "안녕하세요. 정승호 매니저 입니다.");
-        talkDate.Add(7000, "안녕하세요. 한효승 매니저 입니다.");
-        talkDate.Add(8000, "안녕하세요. 장윤서 매니저 입니다.");
-        talkDate.Add(9000, "안녕하세요. 박준영 매니저 입니다.");
+        talkDate.Add(1000, "안녕하세요~ 오정호 튜터 입니다!ㅎㅎ");
+        talkDate.Add(2000, "안녕하세요! 송지원 튜터 입니다.");
+        talkDate.Add(3000, "안녕하세요. 이성언 튜터 입니다!");
+        talkDate.Add(4000, "안녕하세요~! 강성훈 튜터 입니다.");
+        talkDate.Add(5000, "안녕하세요. 김하연 튜터 입니다.!");
+        talkDate.Add(6000, "안녕하세용 정승호 매니저 입니당.");
+        talkDate.Add(7000, "한효승 매니저 입니다~~ 공부하세요.");
+        talkDate.Add(8000, "안녕하세욤! 장윤서 매니저 입니다~");
+        talkDate.Add(9000, "안녕하세요! 박준영 매니저 입니다~");
 
         // NPC Image
         npcProfile.Add(1000, Resources.Load<Sprite>("Image/OH Tuter"));
